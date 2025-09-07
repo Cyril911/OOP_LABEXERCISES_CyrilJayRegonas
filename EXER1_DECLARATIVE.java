@@ -2,34 +2,34 @@
 // File Name: EXER1_DECLARATIVE.java
 // Author: Cyril Jay L. Regonas
 // Date: September 05 2025
-// Description: Demonstrates Declarative Style in Java
-//              using stream() and condition.
+// Deskripsyon: Nagpakita sa Declarative Style sa Java
+//              gamit ang stream() ug kondisyon.
 // **************************************************************
 
-import java.util.Arrays;  // Used to create a fixed-size list
-import java.util.List;    // Import for the List collection
+import java.util.Arrays;  // Gigamit para makahimo og fixed-size nga lista
+import java.util.List;    // Import para sa List nga koleksyon
 
 public class Exer1_Declarative {
     public static void main(String[] args) {
-        // List of names
+        // Lista sa mga ngalan
         List<String> names = Arrays.asList("Bronto", "Butterfly", "Kitsune", "Mimic", "Dragonfly");
 
-        // Declarative style:
-        // "What do we want to check?" → if there is a name with ≤ 3 characters
+        // Declarative nga pamaagi:
+        // "Unsay gusto nato i-check?" → kung naa bay ngalan nga ≤ 3 ka karakter
         boolean hasShortName = names.stream().anyMatch(n -> n.length() <= 3);
 
-        // Display the result
-        System.out.println("Is there a short name (<=3 chars)? " + hasShortName);
+        // Ipakita ang resulta
+        System.out.println("Naa bay ngalan nga mubo (<=3 chars)? " + hasShortName);
     }
 }
 
 // ----------------------------
 // SAMPLE OUTPUT
 // ----------------------------
-// Is there a short name (<=3 chars)? false
+// Naa bay ngalan nga mubo (<=3 chars)? false
 //
 // GENERAL COMMENT:
-// In the declarative style, the focus is on *what should be done*,
-// not on how the loop is executed.
-// The stream().anyMatch() automatically traverses all elements.
+// Sa declarative nga paagi, ang focus kay *unsa ang buhaton*,
+// dili kung giunsa ang pag-loop.
+// Ang stream().anyMatch() awtomatik nga mo-traverse sa tanang elemento.
 // ----------------------------
