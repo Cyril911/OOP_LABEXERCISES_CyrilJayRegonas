@@ -1,7 +1,7 @@
 // **************************************************************
 // File Name: EXER1_DECLARATIVE.java
 // Author: Cyril Jay L. Regonas
-// Date: September 04 2025
+// Date: September 05 2025
 // Description: Nagpakita sa Declarative Style sa Java
 //              gamit ang stream() ug kondisyon.
 // **************************************************************
